@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016E0207D9592DED0E46B491 /* Pods_StockCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AD6C6137D1B204ECD55207 /* Pods_StockCalculator.framework */; };
+		090116B925F54193007C9032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090116B825F54193007C9032 /* AppDelegate.swift */; };
+		090116BB25F54193007C9032 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090116BA25F54193007C9032 /* SceneDelegate.swift */; };
+		090116BD25F54193007C9032 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090116BC25F54193007C9032 /* ViewController.swift */; };
+		090116C025F54193007C9032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090116BE25F54193007C9032 /* Main.storyboard */; };
+		090116C225F54194007C9032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090116C125F54194007C9032 /* Assets.xcassets */; };
+		090116C525F54194007C9032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090116C325F54194007C9032 /* LaunchScreen.storyboard */; };
+		090970FC25F6910D0034A497 /* StockAvgViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090970FB25F6910D0034A497 /* StockAvgViewController.storyboard */; };
+		090970FF25F691690034A497 /* StockRevenueViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090970FE25F691690034A497 /* StockRevenueViewController.storyboard */; };
+		0909710225F691970034A497 /* StockAvgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909710125F691970034A497 /* StockAvgViewController.swift */; };
+		0909710525F691E00034A497 /* StockRevenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909710425F691E00034A497 /* StockRevenueViewController.swift */; };
+		0919114F25F54D9F0050359B /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */; };
+		0919115C25F5567E0050359B /* GoogleAdmob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919115B25F5567E0050359B /* GoogleAdmob.swift */; };
+		09FA41AE25F563140022F7F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 09FA419D25F563140022F7F8 /* LICENSE */; };
+		09FA41AF25F563140022F7F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 09FA419E25F563140022F7F8 /* README.md */; };
+		09FA41B025F563140022F7F8 /* Array+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41A125F563140022F7F8 /* Array+NSLayoutConstraint.swift */; };
+		09FA41B125F563140022F7F8 /* PagingMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41A225F563140022F7F8 /* PagingMenuViewController.swift */; };
+		09FA41B225F563140022F7F8 /* ContentAppearanceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41A325F563140022F7F8 /* ContentAppearanceHandler.swift */; };
+		09FA41B325F563140022F7F8 /* PagingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41A425F563140022F7F8 /* PagingContentViewController.swift */; };
+		09FA41B425F563140022F7F8 /* UnderlineFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41A725F563140022F7F8 /* UnderlineFocusView.swift */; };
+		09FA41B525F563140022F7F8 /* TitleLabelMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41A825F563140022F7F8 /* TitleLabelMenuViewCell.swift */; };
+		09FA41B625F563140022F7F8 /* OverlayMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41AA25F563140022F7F8 /* OverlayMenuCell.swift */; };
+		09FA41B725F563140022F7F8 /* OverlayFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41AB25F563140022F7F8 /* OverlayFocusView.swift */; };
+		09FA41B825F563140022F7F8 /* PagingKitProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41AC25F563140022F7F8 /* PagingKitProxy.swift */; };
+		09FA41B925F563140022F7F8 /* PagingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41AD25F563140022F7F8 /* PagingMenuView.swift */; };
+		09FA41BC25F564910022F7F8 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41BB25F564910022F7F8 /* MenuCell.swift */; };
+		09FA41BF25F564C40022F7F8 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09FA41BE25F564C40022F7F8 /* MenuCell.xib */; };
+		09FA41C225F566E40022F7F8 /* FocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09FA41C125F566E40022F7F8 /* FocusView.xib */; };
+		09FA41C925F573340022F7F8 /* PagingViewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41C825F573340022F7F8 /* PagingViewFile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		090116B525F54193007C9032 /* StockCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		090116B825F54193007C9032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		090116BA25F54193007C9032 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		090116BC25F54193007C9032 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		090116BF25F54193007C9032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		090116C125F54194007C9032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		090116C425F54194007C9032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		090116C625F54194007C9032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090970FB25F6910D0034A497 /* StockAvgViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StockAvgViewController.storyboard; sourceTree = "<group>"; };
+		090970FE25F691690034A497 /* StockRevenueViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StockRevenueViewController.storyboard; sourceTree = "<group>"; };
+		0909710125F691970034A497 /* StockAvgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAvgViewController.swift; sourceTree = "<group>"; };
+		0909710425F691E00034A497 /* StockRevenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRevenueViewController.swift; sourceTree = "<group>"; };
+		0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Pods/GoogleMobileAds.xcframework; sourceTree = SOURCE_ROOT; };
+		0919115B25F5567E0050359B /* GoogleAdmob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdmob.swift; sourceTree = "<group>"; };
+		09FA419D25F563140022F7F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		09FA419E25F563140022F7F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		09FA41A025F563140022F7F8 /* PagingKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingKit.h; sourceTree = "<group>"; };
+		09FA41A125F563140022F7F8 /* Array+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		09FA41A225F563140022F7F8 /* PagingMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenuViewController.swift; sourceTree = "<group>"; };
+		09FA41A325F563140022F7F8 /* ContentAppearanceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentAppearanceHandler.swift; sourceTree = "<group>"; };
+		09FA41A425F563140022F7F8 /* PagingContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingContentViewController.swift; sourceTree = "<group>"; };
+		09FA41A725F563140022F7F8 /* UnderlineFocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineFocusView.swift; sourceTree = "<group>"; };
+		09FA41A825F563140022F7F8 /* TitleLabelMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleLabelMenuViewCell.swift; sourceTree = "<group>"; };
+		09FA41AA25F563140022F7F8 /* OverlayMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayMenuCell.swift; sourceTree = "<group>"; };
+		09FA41AB25F563140022F7F8 /* OverlayFocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayFocusView.swift; sourceTree = "<group>"; };
+		09FA41AC25F563140022F7F8 /* PagingKitProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingKitProxy.swift; sourceTree = "<group>"; };
+		09FA41AD25F563140022F7F8 /* PagingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenuView.swift; sourceTree = "<group>"; };
+		09FA41BB25F564910022F7F8 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		09FA41BE25F564C40022F7F8 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		09FA41C125F566E40022F7F8 /* FocusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusView.xib; sourceTree = "<group>"; };
+		09FA41C825F573340022F7F8 /* PagingViewFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewFile.swift; sourceTree = "<group>"; };
+		121AF0E4B420798DCCBEAB73 /* Pods-StockCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockCalculator.release.xcconfig"; path = "Target Support Files/Pods-StockCalculator/Pods-StockCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		73AD6C6137D1B204ECD55207 /* Pods_StockCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC18488EE34D65D02DC79510 /* Pods-StockCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockCalculator.debug.xcconfig"; path = "Target Support Files/Pods-StockCalculator/Pods-StockCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090116B225F54193007C9032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016E0207D9592DED0E46B491 /* Pods_StockCalculator.framework in Frameworks */,
+				0919114F25F54D9F0050359B /* GoogleMobileAds.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090116AC25F54193007C9032 = {
+			isa = PBXGroup;
+			children = (
+				090116B725F54193007C9032 /* StockCalculator */,
+				090116B625F54193007C9032 /* Products */,
+				B0F79425FD91815FCA20D3BE /* Pods */,
+				A83A3DFDEFA47534D8EF1440 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		090116B625F54193007C9032 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				090116B525F54193007C9032 /* StockCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		090116B725F54193007C9032 /* StockCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				090970F925F690E80034A497 /* StoryBoards */,
+				09FA41C725F572EC0022F7F8 /* ViewControllerFiles */,
+				09FA41C625F572C40022F7F8 /* CustomClassFiles */,
+				09FA41C525F572B00022F7F8 /* ViewNibFile */,
+				090116B825F54193007C9032 /* AppDelegate.swift */,
+				090116BA25F54193007C9032 /* SceneDelegate.swift */,
+				09FA41BB25F564910022F7F8 /* MenuCell.swift */,
+				090116C125F54194007C9032 /* Assets.xcassets */,
+				090116C325F54194007C9032 /* LaunchScreen.storyboard */,
+				090116C625F54194007C9032 /* Info.plist */,
+			);
+			path = StockCalculator;
+			sourceTree = "<group>";
+		};
+		090970F925F690E80034A497 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				090116BE25F54193007C9032 /* Main.storyboard */,
+				090970FB25F6910D0034A497 /* StockAvgViewController.storyboard */,
+				090970FE25F691690034A497 /* StockRevenueViewController.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		09FA419C25F563140022F7F8 /* PagingKit */ = {
+			isa = PBXGroup;
+			children = (
+				09FA419D25F563140022F7F8 /* LICENSE */,
+				09FA419E25F563140022F7F8 /* README.md */,
+				09FA419F25F563140022F7F8 /* Sources */,
+			);
+			path = PagingKit;
+			sourceTree = "<group>";
+		};
+		09FA419F25F563140022F7F8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				09FA41A025F563140022F7F8 /* PagingKit.h */,
+				09FA41A125F563140022F7F8 /* Array+NSLayoutConstraint.swift */,
+				09FA41A225F563140022F7F8 /* PagingMenuViewController.swift */,
+				09FA41A325F563140022F7F8 /* ContentAppearanceHandler.swift */,
+				09FA41A425F563140022F7F8 /* PagingContentViewController.swift */,
+				09FA41A525F563140022F7F8 /* Menu Cells */,
+				09FA41AC25F563140022F7F8 /* PagingKitProxy.swift */,
+				09FA41AD25F563140022F7F8 /* PagingMenuView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		09FA41A525F563140022F7F8 /* Menu Cells */ = {
+			isa = PBXGroup;
+			children = (
+				09FA41A625F563140022F7F8 /* Underline */,
+				09FA41A925F563140022F7F8 /* Overlay */,
+			);
+			path = "Menu Cells";
+			sourceTree = "<group>";
+		};
+		09FA41A625F563140022F7F8 /* Underline */ = {
+			isa = PBXGroup;
+			children = (
+				09FA41A725F563140022F7F8 /* UnderlineFocusView.swift */,
+				09FA41A825F563140022F7F8 /* TitleLabelMenuViewCell.swift */,
+			);
+			path = Underline;
+			sourceTree = "<group>";
+		};
+		09FA41A925F563140022F7F8 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				09FA41AA25F563140022F7F8 /* OverlayMenuCell.swift */,
+				09FA41AB25F563140022F7F8 /* OverlayFocusView.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		09FA41C525F572B00022F7F8 /* ViewNibFile */ = {
+			isa = PBXGroup;
+			children = (
+				09FA41C125F566E40022F7F8 /* FocusView.xib */,
+				09FA41BE25F564C40022F7F8 /* MenuCell.xib */,
+			);
+			path = ViewNibFile;
+			sourceTree = "<group>";
+		};
+		09FA41C625F572C40022F7F8 /* CustomClassFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0919115B25F5567E0050359B /* GoogleAdmob.swift */,
+				09FA41C825F573340022F7F8 /* PagingViewFile.swift */,
+			);
+			path = CustomClassFiles;
+			sourceTree = "<group>";
+		};
+		09FA41C725F572EC0022F7F8 /* ViewControllerFiles */ = {
+			isa = PBXGroup;
+			children = (
+				090116BC25F54193007C9032 /* ViewController.swift */,
+				0909710125F691970034A497 /* StockAvgViewController.swift */,
+				0909710425F691E00034A497 /* StockRevenueViewController.swift */,
+			);
+			path = ViewControllerFiles;
+			sourceTree = "<group>";
+		};
+		A83A3DFDEFA47534D8EF1440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73AD6C6137D1B204ECD55207 /* Pods_StockCalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0F79425FD91815FCA20D3BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */,
+				09FA419C25F563140022F7F8 /* PagingKit */,
+				EC18488EE34D65D02DC79510 /* Pods-StockCalculator.debug.xcconfig */,
+				121AF0E4B420798DCCBEAB73 /* Pods-StockCalculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		090116B425F54193007C9032 /* StockCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090116C925F54194007C9032 /* Build configuration list for PBXNativeTarget "StockCalculator" */;
+			buildPhases = (
+				3D4E8B4DECD00ECDC556248E /* [CP] Check Pods Manifest.lock */,
+				090116B125F54193007C9032 /* Sources */,
+				090116B225F54193007C9032 /* Frameworks */,
+				090116B325F54193007C9032 /* Resources */,
+				69590D71D8E27B4F52DCA466 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StockCalculator;
+			productName = StockCalculator;
+			productReference = 090116B525F54193007C9032 /* StockCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		090116AD25F54193007C9032 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					090116B425F54193007C9032 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 090116B025F54193007C9032 /* Build configuration list for PBXProject "StockCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 090116AC25F54193007C9032;
+			productRefGroup = 090116B625F54193007C9032 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				090116B425F54193007C9032 /* StockCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		090116B325F54193007C9032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FA41C225F566E40022F7F8 /* FocusView.xib in Resources */,
+				09FA41BF25F564C40022F7F8 /* MenuCell.xib in Resources */,
+				090116C525F54194007C9032 /* LaunchScreen.storyboard in Resources */,
+				090970FF25F691690034A497 /* StockRevenueViewController.storyboard in Resources */,
+				090970FC25F6910D0034A497 /* StockAvgViewController.storyboard in Resources */,
+				090116C225F54194007C9032 /* Assets.xcassets in Resources */,
+				09FA41AF25F563140022F7F8 /* README.md in Resources */,
+				09FA41AE25F563140022F7F8 /* LICENSE in Resources */,
+				090116C025F54193007C9032 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D4E8B4DECD00ECDC556248E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69590D71D8E27B4F52DCA466 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockCalculator/Pods-StockCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockCalculator/Pods-StockCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StockCalculator/Pods-StockCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		090116B125F54193007C9032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FA41C925F573340022F7F8 /* PagingViewFile.swift in Sources */,
+				0919115C25F5567E0050359B /* GoogleAdmob.swift in Sources */,
+				090116BD25F54193007C9032 /* ViewController.swift in Sources */,
+				09FA41B725F563140022F7F8 /* OverlayFocusView.swift in Sources */,
+				0909710225F691970034A497 /* StockAvgViewController.swift in Sources */,
+				09FA41B425F563140022F7F8 /* UnderlineFocusView.swift in Sources */,
+				09FA41B525F563140022F7F8 /* TitleLabelMenuViewCell.swift in Sources */,
+				09FA41B225F563140022F7F8 /* ContentAppearanceHandler.swift in Sources */,
+				0909710525F691E00034A497 /* StockRevenueViewController.swift in Sources */,
+				090116B925F54193007C9032 /* AppDelegate.swift in Sources */,
+				09FA41B925F563140022F7F8 /* PagingMenuView.swift in Sources */,
+				09FA41B325F563140022F7F8 /* PagingContentViewController.swift in Sources */,
+				09FA41B625F563140022F7F8 /* OverlayMenuCell.swift in Sources */,
+				090116BB25F54193007C9032 /* SceneDelegate.swift in Sources */,
+				09FA41BC25F564910022F7F8 /* MenuCell.swift in Sources */,
+				09FA41B025F563140022F7F8 /* Array+NSLayoutConstraint.swift in Sources */,
+				09FA41B825F563140022F7F8 /* PagingKitProxy.swift in Sources */,
+				09FA41B125F563140022F7F8 /* PagingMenuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		090116BE25F54193007C9032 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090116BF25F54193007C9032 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		090116C325F54194007C9032 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090116C425F54194007C9032 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		090116C725F54194007C9032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		090116C825F54194007C9032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		090116CA25F54194007C9032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC18488EE34D65D02DC79510 /* Pods-StockCalculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YC8JDXYY6;
+				INFOPLIST_FILE = StockCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chocochoco.StockCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		090116CB25F54194007C9032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 121AF0E4B420798DCCBEAB73 /* Pods-StockCalculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YC8JDXYY6;
+				INFOPLIST_FILE = StockCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chocochoco.StockCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		090116B025F54193007C9032 /* Build configuration list for PBXProject "StockCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090116C725F54194007C9032 /* Debug */,
+				090116C825F54194007C9032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090116C925F54194007C9032 /* Build configuration list for PBXNativeTarget "StockCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090116CA25F54194007C9032 /* Debug */,
+				090116CB25F54194007C9032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 090116AD25F54193007C9032 /* Project object */;
+}
