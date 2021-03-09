@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,10 +15,10 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDf-G7-Uzo">
-                    <rect key="frame" x="0.0" y="112" width="474" height="15"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <rect key="frame" x="0.0" y="122" width="474" height="5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="15" id="CTs-M1-7A0"/>
+                        <constraint firstAttribute="height" constant="5" id="CTs-M1-7A0"/>
                     </constraints>
                 </view>
             </subviews>
@@ -28,15 +27,11 @@
             <constraints>
                 <constraint firstItem="uDf-G7-Uzo" firstAttribute="bottom" secondItem="ZM7-Tn-1QK" secondAttribute="bottom" id="KIb-3R-SqW"/>
                 <constraint firstItem="uDf-G7-Uzo" firstAttribute="trailing" secondItem="ZM7-Tn-1QK" secondAttribute="trailing" id="gOQ-0i-509"/>
+                <constraint firstItem="ZM7-Tn-1QK" firstAttribute="bottom" secondItem="uDf-G7-Uzo" secondAttribute="bottom" id="obb-Gc-tIs"/>
                 <constraint firstItem="uDf-G7-Uzo" firstAttribute="leading" secondItem="ZM7-Tn-1QK" secondAttribute="leading" id="rqV-fl-Zpf"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="423.75" y="-286.875"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

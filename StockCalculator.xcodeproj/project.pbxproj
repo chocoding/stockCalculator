@@ -20,6 +20,7 @@
 		0909710525F691E00034A497 /* StockRevenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909710425F691E00034A497 /* StockRevenueViewController.swift */; };
 		0919114F25F54D9F0050359B /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */; };
 		0919115C25F5567E0050359B /* GoogleAdmob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919115B25F5567E0050359B /* GoogleAdmob.swift */; };
+		09D7456B25F6DBEB004DCC61 /* MyCustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7456A25F6DBEB004DCC61 /* MyCustomClass.swift */; };
 		09FA41AE25F563140022F7F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 09FA419D25F563140022F7F8 /* LICENSE */; };
 		09FA41AF25F563140022F7F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 09FA419E25F563140022F7F8 /* README.md */; };
 		09FA41B025F563140022F7F8 /* Array+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41A125F563140022F7F8 /* Array+NSLayoutConstraint.swift */; };
@@ -53,6 +54,7 @@
 		0909710425F691E00034A497 /* StockRevenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRevenueViewController.swift; sourceTree = "<group>"; };
 		0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Pods/GoogleMobileAds.xcframework; sourceTree = SOURCE_ROOT; };
 		0919115B25F5567E0050359B /* GoogleAdmob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdmob.swift; sourceTree = "<group>"; };
+		09D7456A25F6DBEB004DCC61 /* MyCustomClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomClass.swift; sourceTree = "<group>"; };
 		09FA419D25F563140022F7F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		09FA419E25F563140022F7F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09FA41A025F563140022F7F8 /* PagingKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingKit.h; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			children = (
 				0919115B25F5567E0050359B /* GoogleAdmob.swift */,
 				09FA41C825F573340022F7F8 /* PagingViewFile.swift */,
+				09D7456A25F6DBEB004DCC61 /* MyCustomClass.swift */,
 			);
 			path = CustomClassFiles;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				09FA41B925F563140022F7F8 /* PagingMenuView.swift in Sources */,
 				09FA41B325F563140022F7F8 /* PagingContentViewController.swift in Sources */,
 				09FA41B625F563140022F7F8 /* OverlayMenuCell.swift in Sources */,
+				09D7456B25F6DBEB004DCC61 /* MyCustomClass.swift in Sources */,
 				090116BB25F54193007C9032 /* SceneDelegate.swift in Sources */,
 				09FA41BC25F564910022F7F8 /* MenuCell.swift in Sources */,
 				09FA41B025F563140022F7F8 /* Array+NSLayoutConstraint.swift in Sources */,

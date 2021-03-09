@@ -24,11 +24,31 @@ class ViewController: UIViewController {
             return vc
         }
     
-    var dataSource = [(menuTitle: "test1", vc: viewController(.red)), (menuTitle: "test2", vc: viewController(.blue)), (menuTitle: "test3", vc: viewController(.yellow))]
+//    var dataSource = [(menuTitle: "test1", vc: viewController(.red)), (menuTitle: "test2", vc: viewController(.blue)), (menuTitle: "test3", vc: viewController(.yellow))]
+    
+    var dataSource = [(menu: String, content: UIViewController)](){
+        didSet{
+            menuViewController.reloadData()
+            contentViewController.reloadData()
+        }
+    }
+    
+    lazy var firstLoad: (()-> Void)? = {[weak self, menuViewController, contentViewController] in
+        menuViewController?.reloadData()
+        contentViewController?.reloadData()
+        self?.firstLoad = nil
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        firstLoad?()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         pagingViewStart()
         adMobStart()
     }
+    
+    
 }

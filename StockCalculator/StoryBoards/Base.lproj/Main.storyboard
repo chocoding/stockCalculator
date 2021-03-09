@@ -27,7 +27,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xe4-Ay-F3j">
-                                <rect key="frame" x="0.0" y="114" width="390" height="696"/>
+                                <rect key="frame" x="0.0" y="104" width="390" height="706"/>
                                 <connections>
                                     <segue destination="F0i-PY-Fmr" kind="embed" id="iWQ-dj-GDu"/>
                                 </connections>
@@ -37,7 +37,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4Ze-2Y-jFi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Kr-g3-2se"/>
-                            <constraint firstItem="xe4-Ay-F3j" firstAttribute="top" secondItem="4Ze-2Y-jFi" secondAttribute="bottom" constant="20" id="D4k-fb-r7G"/>
+                            <constraint firstItem="xe4-Ay-F3j" firstAttribute="top" secondItem="4Ze-2Y-jFi" secondAttribute="bottom" constant="10" id="D4k-fb-r7G"/>
                             <constraint firstItem="4Ze-2Y-jFi" firstAttribute="leading" secondItem="0cp-gc-g4v" secondAttribute="leading" id="cFe-Bk-ghd"/>
                             <constraint firstItem="4Ze-2Y-jFi" firstAttribute="top" secondItem="0cp-gc-g4v" secondAttribute="top" id="cPM-yJ-0AU"/>
                             <constraint firstItem="xe4-Ay-F3j" firstAttribute="leading" secondItem="0cp-gc-g4v" secondAttribute="leading" id="dUi-na-rI1"/>
@@ -59,7 +59,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="5z1-Mh-E2S"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTp-Oz-FVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -71,7 +71,7 @@
             <objects>
                 <viewController id="F0i-PY-Fmr" customClass="PagingContentViewController" customModule="StockCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="48T-fP-w9G">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="696"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="706"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="mcB-zZ-RZv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,9 +85,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

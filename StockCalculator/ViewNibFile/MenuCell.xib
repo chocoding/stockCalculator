@@ -16,17 +16,11 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-RZ-LTb">
-                    <rect key="frame" x="163.5" y="61.5" width="71.5" height="20.5"/>
+                    <rect key="frame" x="178" y="68" width="42" height="19.5"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="774-Cz-F08">
-                            <rect key="frame" x="0.0" y="1" width="20" height="18"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="20" id="q6A-vi-1rv"/>
-                            </constraints>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이틀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi5-9h-bIV">
-                            <rect key="frame" x="27" y="0.0" width="44.5" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이틀" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi5-9h-bIV">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -36,7 +30,7 @@
             <viewLayoutGuide key="safeArea" id="PC4-Z6-jd1"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="PC4-Z6-jd1" firstAttribute="bottom" secondItem="pdu-RZ-LTb" secondAttribute="bottom" constant="20" id="Ljo-9h-xwr"/>
+                <constraint firstItem="PC4-Z6-jd1" firstAttribute="bottom" secondItem="pdu-RZ-LTb" secondAttribute="bottom" constant="14.5" id="Ljo-9h-xwr"/>
                 <constraint firstItem="pdu-RZ-LTb" firstAttribute="centerX" secondItem="cuF-sN-lsK" secondAttribute="centerX" id="YgC-H9-Z30"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -47,7 +41,6 @@
         </view>
     </objects>
     <resources>
-        <image name="folder.fill" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

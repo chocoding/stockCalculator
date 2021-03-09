@@ -14,8 +14,9 @@ extension ViewController
         menuViewController.register(nib: UINib(nibName: "MenuCell", bundle: nil), forCellWithReuseIdentifier: "MenuCell")
         menuViewController.registerFocusView(nib: UINib(nibName: "FocusView", bundle: nil))
         
-        menuViewController.reloadData()
-        contentViewController.reloadData()
+        menuViewController.cellAlignment = .left
+
+        dataSource = makeDataSource()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -29,6 +30,27 @@ extension ViewController
                 contentViewController.delegate = self
             }
         }
+    
+    fileprivate func makeDataSource() -> [(menu: String, content: UIViewController)]{
+        let myMenuArray = ["주식 평단가\n계산", "주식 이익률\n계산"]
+        
+        return myMenuArray.map{
+            
+            let title = $0
+            
+            switch title{
+            case "주식 평단가\n계산":
+                let vc = UIStoryboard(name:"StockAvgViewController",bundle: nil).instantiateViewController(identifier: "StockAvgViewController") as! StockAvgViewController
+                return (menu:title, content:vc)
+            case "주식 이익률\n계산":
+                let vc = UIStoryboard(name:"StockRevenueViewController",bundle: nil).instantiateViewController(identifier: "StockRevenueViewController") as StockRevenueViewController
+                return (menu:title, content:vc)
+            default:
+                let vc = UIStoryboard(name:"StockAvgViewController",bundle: nil).instantiateViewController(identifier: "StockAvgViewController") as! StockAvgViewController
+                return (menu:title, content:vc)
+            }
+        }
+    }
 }
 
 // menu datasource
@@ -43,7 +65,7 @@ extension ViewController: PagingMenuViewControllerDataSource {
     
     func menuViewController(viewController: PagingMenuViewController, cellForItemAt index: Int) -> PagingMenuViewCell {
         let cell = viewController.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: index) as! MenuCell
-        cell.titleLabel.text = dataSource[index].menuTitle
+        cell.titleLabel.text = dataSource[index].menu
         cell.titleLabel.textColor = .black
         return cell
     }
@@ -56,7 +78,7 @@ extension ViewController: PagingContentViewControllerDataSource {
     }
     
     func contentViewController(viewController: PagingContentViewController, viewControllerAt index: Int) -> UIViewController {
-        return dataSource[index].vc
+        return dataSource[index].content
     }
 }
 
