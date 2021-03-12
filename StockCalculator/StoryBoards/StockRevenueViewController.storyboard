@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -14,20 +14,204 @@
             <objects>
                 <viewController storyboardIdentifier="StockRevenueViewController" id="84c-HG-gtU" customClass="StockRevenueViewController" customModule="StockCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GC2-Ph-ijh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주식 수익금 계산" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lu-CH-L3m">
+                                <rect key="frame" x="120" y="26" width="150" height="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="due-o4-iJk">
+                                <rect key="frame" x="0.0" y="71" width="390" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 가지고 있는 주식 수를 입력해주세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKg-pk-TuD">
+                                        <rect key="frame" x="8" y="12" width="259" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gK3-m5-wbr">
+                                        <rect key="frame" x="8" y="45" width="374" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="bPt-Og-ebP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="BKg-pk-TuD" secondAttribute="trailing" constant="123" id="A1b-2h-dtI"/>
+                                    <constraint firstItem="BKg-pk-TuD" firstAttribute="leading" secondItem="due-o4-iJk" secondAttribute="leading" constant="8" id="Bol-J6-jZ0"/>
+                                    <constraint firstItem="gK3-m5-wbr" firstAttribute="top" secondItem="BKg-pk-TuD" secondAttribute="bottom" constant="12" id="KdY-Zn-cPa"/>
+                                    <constraint firstItem="BKg-pk-TuD" firstAttribute="top" secondItem="due-o4-iJk" secondAttribute="top" constant="12" id="XzI-Mo-uqw"/>
+                                    <constraint firstAttribute="trailing" secondItem="gK3-m5-wbr" secondAttribute="trailing" constant="8" id="dFM-ay-nt4"/>
+                                    <constraint firstAttribute="height" constant="91" id="ech-PY-obf"/>
+                                    <constraint firstItem="gK3-m5-wbr" firstAttribute="leading" secondItem="due-o4-iJk" secondAttribute="leading" constant="8" id="pqL-zr-m9A"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqu-I0-fh2">
+                                <rect key="frame" x="0.0" y="172" width="390" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. 평단가를 입력해주세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ism-Ao-VHC">
+                                        <rect key="frame" x="8" y="12" width="176" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Say-6h-3lP">
+                                        <rect key="frame" x="8" y="45" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="GUJ-wZ-YQ6"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ism-Ao-VHC" secondAttribute="trailing" constant="206" id="Xnb-8a-ESF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Say-6h-3lP" secondAttribute="trailing" constant="8" id="bAf-Tz-piL"/>
+                                    <constraint firstItem="Say-6h-3lP" firstAttribute="top" secondItem="ism-Ao-VHC" secondAttribute="bottom" constant="12" id="nXU-cn-Npt"/>
+                                    <constraint firstItem="ism-Ao-VHC" firstAttribute="leading" secondItem="mqu-I0-fh2" secondAttribute="leading" constant="8" id="pZW-xN-4eR"/>
+                                    <constraint firstItem="ism-Ao-VHC" firstAttribute="top" secondItem="mqu-I0-fh2" secondAttribute="top" constant="12" id="qdj-La-Ido"/>
+                                    <constraint firstItem="Say-6h-3lP" firstAttribute="leading" secondItem="mqu-I0-fh2" secondAttribute="leading" constant="8" id="yvz-8l-qJR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wI4-Xb-HZs">
+                                <rect key="frame" x="0.0" y="273" width="390" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. 매도 가격을 입력해주세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nf3-fL-WVw">
+                                        <rect key="frame" x="8" y="12" width="195" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="czE-8w-gVV">
+                                        <rect key="frame" x="8" y="45" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Nf3-fL-WVw" secondAttribute="trailing" constant="187" id="18w-6c-CXk"/>
+                                    <constraint firstItem="Nf3-fL-WVw" firstAttribute="top" secondItem="wI4-Xb-HZs" secondAttribute="top" constant="12" id="6OD-fk-0Zq"/>
+                                    <constraint firstAttribute="trailing" secondItem="czE-8w-gVV" secondAttribute="trailing" constant="8" id="Ocl-P7-PyU"/>
+                                    <constraint firstItem="czE-8w-gVV" firstAttribute="top" secondItem="Nf3-fL-WVw" secondAttribute="bottom" constant="12" id="Om5-vZ-SgT"/>
+                                    <constraint firstItem="czE-8w-gVV" firstAttribute="leading" secondItem="wI4-Xb-HZs" secondAttribute="leading" constant="8" id="Qz7-7H-K42"/>
+                                    <constraint firstItem="Nf3-fL-WVw" firstAttribute="leading" secondItem="wI4-Xb-HZs" secondAttribute="leading" constant="8" id="RlP-SS-qoq"/>
+                                    <constraint firstAttribute="height" constant="91" id="X3Q-fL-eNh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7h8-js-Gtr">
+                                <rect key="frame" x="0.0" y="374" width="390" height="192"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국내 주식 수익금" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL7-dy-zGe">
+                                        <rect key="frame" x="0.0" y="12" width="390" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="미국 주식 수익금" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReS-mu-Iba">
+                                        <rect key="frame" x="0.0" y="82" width="390" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kcy-Pz-9Eb">
+                                        <rect key="frame" x="8" y="108" width="374" height="34"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수수료는 포함되어 있지 않기 때문에 실제 수익금이 적을 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQp-PX-xEg">
+                                        <rect key="frame" x="16" y="150" width="358" height="33.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X9y-rV-ohH">
+                                        <rect key="frame" x="8" y="38" width="374" height="34"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstItem="CQp-PX-xEg" firstAttribute="leading" secondItem="7h8-js-Gtr" secondAttribute="leading" constant="16" id="5Jt-qY-AZX"/>
+                                    <constraint firstItem="X9y-rV-ohH" firstAttribute="leading" secondItem="7h8-js-Gtr" secondAttribute="leading" constant="8" id="Dly-hs-JX6"/>
+                                    <constraint firstItem="mL7-dy-zGe" firstAttribute="leading" secondItem="7h8-js-Gtr" secondAttribute="leading" id="I0Y-w2-SzD"/>
+                                    <constraint firstItem="ReS-mu-Iba" firstAttribute="top" secondItem="X9y-rV-ohH" secondAttribute="bottom" constant="10" id="JTx-0x-sdH"/>
+                                    <constraint firstAttribute="height" constant="192" id="LPF-gp-xcF"/>
+                                    <constraint firstAttribute="bottom" secondItem="CQp-PX-xEg" secondAttribute="bottom" constant="8.3300000000000001" id="Pcj-Rd-3Np"/>
+                                    <constraint firstItem="mL7-dy-zGe" firstAttribute="top" secondItem="7h8-js-Gtr" secondAttribute="top" constant="12" id="PoT-hg-t7e"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kcy-Pz-9Eb" secondAttribute="trailing" constant="8" id="Rt7-V3-hTK"/>
+                                    <constraint firstItem="Kcy-Pz-9Eb" firstAttribute="leading" secondItem="7h8-js-Gtr" secondAttribute="leading" constant="8" id="SIn-wV-PQC"/>
+                                    <constraint firstItem="Kcy-Pz-9Eb" firstAttribute="top" secondItem="ReS-mu-Iba" secondAttribute="bottom" constant="8" symbolic="YES" id="TB8-SF-NYc"/>
+                                    <constraint firstAttribute="trailing" secondItem="CQp-PX-xEg" secondAttribute="trailing" constant="16" id="Tbb-MH-EIi"/>
+                                    <constraint firstAttribute="trailing" secondItem="ReS-mu-Iba" secondAttribute="trailing" id="iJ2-yL-eIz"/>
+                                    <constraint firstItem="X9y-rV-ohH" firstAttribute="top" secondItem="mL7-dy-zGe" secondAttribute="bottom" constant="8" symbolic="YES" id="lXm-b1-rvb"/>
+                                    <constraint firstAttribute="trailing" secondItem="mL7-dy-zGe" secondAttribute="trailing" id="n75-7v-q9X"/>
+                                    <constraint firstAttribute="trailing" secondItem="X9y-rV-ohH" secondAttribute="trailing" constant="8" id="oYO-Mt-0HM"/>
+                                    <constraint firstItem="ReS-mu-Iba" firstAttribute="leading" secondItem="7h8-js-Gtr" secondAttribute="leading" id="zzm-GH-35J"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="DlX-q2-lxt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5lu-CH-L3m" firstAttribute="top" secondItem="GC2-Ph-ijh" secondAttribute="top" constant="26" id="9be-ty-1b2"/>
+                            <constraint firstItem="mqu-I0-fh2" firstAttribute="leading" secondItem="DlX-q2-lxt" secondAttribute="leading" id="AXA-0W-SXc"/>
+                            <constraint firstItem="due-o4-iJk" firstAttribute="centerX" secondItem="GC2-Ph-ijh" secondAttribute="centerX" id="CCs-hw-KRq"/>
+                            <constraint firstItem="7h8-js-Gtr" firstAttribute="trailing" secondItem="DlX-q2-lxt" secondAttribute="trailing" id="HUP-4N-WcK"/>
+                            <constraint firstItem="due-o4-iJk" firstAttribute="leading" secondItem="DlX-q2-lxt" secondAttribute="leading" id="IhW-nM-w3B"/>
+                            <constraint firstItem="wI4-Xb-HZs" firstAttribute="trailing" secondItem="DlX-q2-lxt" secondAttribute="trailing" id="JW1-AN-YVL"/>
+                            <constraint firstItem="7h8-js-Gtr" firstAttribute="leading" secondItem="DlX-q2-lxt" secondAttribute="leading" id="Oso-Uk-dN6"/>
+                            <constraint firstItem="due-o4-iJk" firstAttribute="top" secondItem="5lu-CH-L3m" secondAttribute="bottom" constant="17" id="Pqt-Lf-kXY"/>
+                            <constraint firstItem="due-o4-iJk" firstAttribute="trailing" secondItem="DlX-q2-lxt" secondAttribute="trailing" id="U0e-Sc-BKS"/>
+                            <constraint firstItem="wI4-Xb-HZs" firstAttribute="top" secondItem="mqu-I0-fh2" secondAttribute="bottom" constant="10" id="Vey-6V-ZiU"/>
+                            <constraint firstItem="wI4-Xb-HZs" firstAttribute="leading" secondItem="DlX-q2-lxt" secondAttribute="leading" id="YyT-Kt-W6K"/>
+                            <constraint firstItem="mqu-I0-fh2" firstAttribute="trailing" secondItem="DlX-q2-lxt" secondAttribute="trailing" id="dh3-qj-FCr"/>
+                            <constraint firstItem="mqu-I0-fh2" firstAttribute="top" secondItem="due-o4-iJk" secondAttribute="bottom" constant="10" id="ewa-68-1ZP"/>
+                            <constraint firstItem="7h8-js-Gtr" firstAttribute="top" secondItem="wI4-Xb-HZs" secondAttribute="bottom" constant="10" id="f1J-MB-f6d"/>
+                            <constraint firstItem="5lu-CH-L3m" firstAttribute="centerX" secondItem="GC2-Ph-ijh" secondAttribute="centerX" id="iLs-yU-h1i"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avgPrice" destination="Say-6h-3lP" id="XS5-BK-0cQ"/>
+                        <outlet property="holdStock" destination="gK3-m5-wbr" id="2qh-Kn-Tzr"/>
+                        <outlet property="koreaRevenue" destination="X9y-rV-ohH" id="t5q-yN-49I"/>
+                        <outlet property="sellPrice" destination="czE-8w-gVV" id="0RF-xg-oh7"/>
+                        <outlet property="usRevenue" destination="Kcy-Pz-9Eb" id="vhz-40-sHL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hc6-U5-bWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="94"/>
+            <point key="canvasLocation" x="130.76923076923077" y="93.127962085308056"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

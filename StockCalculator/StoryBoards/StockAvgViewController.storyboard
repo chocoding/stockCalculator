@@ -32,6 +32,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue"/>
                                         <connections>
                                             <action selector="currentHoldStockTextField:" destination="GF7-fZ-7JV" eventType="editingDidEnd" id="Ty2-DN-hcm"/>
+                                            <action selector="currentHoldStockTextField:" destination="GF7-fZ-7JV" eventType="editingChanged" id="dVc-Ox-3xS"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J6C-FC-2B6">
@@ -53,6 +54,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <connections>
                                             <action selector="currentStockAvgTextField:" destination="GF7-fZ-7JV" eventType="editingDidEnd" id="8Kf-vo-bIP"/>
+                                            <action selector="currentStockAvgTextField:" destination="GF7-fZ-7JV" eventType="editingChanged" id="fa3-9e-hkr"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUt-yI-Qss">
@@ -104,6 +106,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue"/>
                                         <connections>
                                             <action selector="buyingTextField:" destination="GF7-fZ-7JV" eventType="editingDidEnd" id="4bh-mQ-Pn5"/>
+                                            <action selector="buyingTextField:" destination="GF7-fZ-7JV" eventType="editingChanged" id="G6A-Ka-kME"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZvL-IX-xV6">
@@ -118,7 +121,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <connections>
-                                            <action selector="buyingPriceTextField:" destination="GF7-fZ-7JV" eventType="editingDidEnd" id="GID-mo-R3G"/>
+                                            <action selector="buyingPriceTextField:" destination="GF7-fZ-7JV" eventType="editingChanged" id="uhp-Dd-4bQ"/>
+                                            <action selector="buyingPriceTextField:" destination="GF7-fZ-7JV" eventType="editingDidEnd" id="yKh-Ui-ZRc"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWA-U5-ZLf">

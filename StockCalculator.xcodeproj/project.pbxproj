@@ -20,6 +20,8 @@
 		0909710525F691E00034A497 /* StockRevenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909710425F691E00034A497 /* StockRevenueViewController.swift */; };
 		0919114F25F54D9F0050359B /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */; };
 		0919115C25F5567E0050359B /* GoogleAdmob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919115B25F5567E0050359B /* GoogleAdmob.swift */; };
+		09A4174925FC0976007E9428 /* DebateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A4174825FC0976007E9428 /* DebateViewController.storyboard */; };
+		09A4174C25FC09A4007E9428 /* DebateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4174B25FC09A4007E9428 /* DebateViewController.swift */; };
 		09D7456B25F6DBEB004DCC61 /* MyCustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7456A25F6DBEB004DCC61 /* MyCustomClass.swift */; };
 		09FA41AE25F563140022F7F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 09FA419D25F563140022F7F8 /* LICENSE */; };
 		09FA41AF25F563140022F7F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 09FA419E25F563140022F7F8 /* README.md */; };
@@ -54,6 +56,8 @@
 		0909710425F691E00034A497 /* StockRevenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRevenueViewController.swift; sourceTree = "<group>"; };
 		0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Pods/GoogleMobileAds.xcframework; sourceTree = SOURCE_ROOT; };
 		0919115B25F5567E0050359B /* GoogleAdmob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdmob.swift; sourceTree = "<group>"; };
+		09A4174825FC0976007E9428 /* DebateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DebateViewController.storyboard; sourceTree = "<group>"; };
+		09A4174B25FC09A4007E9428 /* DebateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebateViewController.swift; sourceTree = "<group>"; };
 		09D7456A25F6DBEB004DCC61 /* MyCustomClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomClass.swift; sourceTree = "<group>"; };
 		09FA419D25F563140022F7F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		09FA419E25F563140022F7F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				090116BE25F54193007C9032 /* Main.storyboard */,
 				090970FB25F6910D0034A497 /* StockAvgViewController.storyboard */,
 				090970FE25F691690034A497 /* StockRevenueViewController.storyboard */,
+				09A4174825FC0976007E9428 /* DebateViewController.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 				090116BC25F54193007C9032 /* ViewController.swift */,
 				0909710125F691970034A497 /* StockAvgViewController.swift */,
 				0909710425F691E00034A497 /* StockRevenueViewController.swift */,
+				09A4174B25FC09A4007E9428 /* DebateViewController.swift */,
 			);
 			path = ViewControllerFiles;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 				090970FC25F6910D0034A497 /* StockAvgViewController.storyboard in Resources */,
 				090116C225F54194007C9032 /* Assets.xcassets in Resources */,
 				09FA41AF25F563140022F7F8 /* README.md in Resources */,
+				09A4174925FC0976007E9428 /* DebateViewController.storyboard in Resources */,
 				09FA41AE25F563140022F7F8 /* LICENSE in Resources */,
 				090116C025F54193007C9032 /* Main.storyboard in Resources */,
 			);
@@ -364,6 +371,7 @@
 				09FA41B525F563140022F7F8 /* TitleLabelMenuViewCell.swift in Sources */,
 				09FA41B225F563140022F7F8 /* ContentAppearanceHandler.swift in Sources */,
 				0909710525F691E00034A497 /* StockRevenueViewController.swift in Sources */,
+				09A4174C25FC09A4007E9428 /* DebateViewController.swift in Sources */,
 				090116B925F54193007C9032 /* AppDelegate.swift in Sources */,
 				09FA41B925F563140022F7F8 /* PagingMenuView.swift in Sources */,
 				09FA41B325F563140022F7F8 /* PagingContentViewController.swift in Sources */,

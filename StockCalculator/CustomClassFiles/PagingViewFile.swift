@@ -32,7 +32,7 @@ extension ViewController
         }
     
     fileprivate func makeDataSource() -> [(menu: String, content: UIViewController)]{
-        let myMenuArray = ["주식 평단가\n계산", "주식 이익률\n계산"]
+        let myMenuArray = ["주식 평단가\n계산", "주식 이익금\n계산", "종목\n토론방"]
         
         return myMenuArray.map{
             
@@ -42,8 +42,11 @@ extension ViewController
             case "주식 평단가\n계산":
                 let vc = UIStoryboard(name:"StockAvgViewController",bundle: nil).instantiateViewController(identifier: "StockAvgViewController") as! StockAvgViewController
                 return (menu:title, content:vc)
-            case "주식 이익률\n계산":
+            case "주식 이익금\n계산":
                 let vc = UIStoryboard(name:"StockRevenueViewController",bundle: nil).instantiateViewController(identifier: "StockRevenueViewController") as StockRevenueViewController
+                return (menu:title, content:vc)
+            case "종목\n토론방":
+                let vc = UIStoryboard(name:"DebateViewController",bundle: nil).instantiateViewController(identifier: "DebateViewController") as DebateViewController
                 return (menu:title, content:vc)
             default:
                 let vc = UIStoryboard(name:"StockAvgViewController",bundle: nil).instantiateViewController(identifier: "StockAvgViewController") as! StockAvgViewController
