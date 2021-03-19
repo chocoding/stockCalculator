@@ -18,6 +18,8 @@
 		090970FF25F691690034A497 /* StockRevenueViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090970FE25F691690034A497 /* StockRevenueViewController.storyboard */; };
 		0909710225F691970034A497 /* StockAvgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909710125F691970034A497 /* StockAvgViewController.swift */; };
 		0909710525F691E00034A497 /* StockRevenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909710425F691E00034A497 /* StockRevenueViewController.swift */; };
+		09137D882604F75A00636885 /* StockKnowledgeViewContorller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09137D872604F75A00636885 /* StockKnowledgeViewContorller.storyboard */; };
+		09137D8B2604F7D400636885 /* StockKnowledgeViewContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09137D8A2604F7D400636885 /* StockKnowledgeViewContorller.swift */; };
 		0919114F25F54D9F0050359B /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */; };
 		0919115C25F5567E0050359B /* GoogleAdmob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919115B25F5567E0050359B /* GoogleAdmob.swift */; };
 		09A4174925FC0976007E9428 /* DebateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A4174825FC0976007E9428 /* DebateViewController.storyboard */; };
@@ -54,6 +56,8 @@
 		090970FE25F691690034A497 /* StockRevenueViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StockRevenueViewController.storyboard; sourceTree = "<group>"; };
 		0909710125F691970034A497 /* StockAvgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAvgViewController.swift; sourceTree = "<group>"; };
 		0909710425F691E00034A497 /* StockRevenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRevenueViewController.swift; sourceTree = "<group>"; };
+		09137D872604F75A00636885 /* StockKnowledgeViewContorller.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StockKnowledgeViewContorller.storyboard; sourceTree = "<group>"; };
+		09137D8A2604F7D400636885 /* StockKnowledgeViewContorller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockKnowledgeViewContorller.swift; sourceTree = "<group>"; };
 		0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Pods/GoogleMobileAds.xcframework; sourceTree = SOURCE_ROOT; };
 		0919115B25F5567E0050359B /* GoogleAdmob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdmob.swift; sourceTree = "<group>"; };
 		09A4174825FC0976007E9428 /* DebateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DebateViewController.storyboard; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				090970FB25F6910D0034A497 /* StockAvgViewController.storyboard */,
 				090970FE25F691690034A497 /* StockRevenueViewController.storyboard */,
 				09A4174825FC0976007E9428 /* DebateViewController.storyboard */,
+				09137D872604F75A00636885 /* StockKnowledgeViewContorller.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				0909710125F691970034A497 /* StockAvgViewController.swift */,
 				0909710425F691E00034A497 /* StockRevenueViewController.swift */,
 				09A4174B25FC09A4007E9428 /* DebateViewController.swift */,
+				09137D8A2604F7D400636885 /* StockKnowledgeViewContorller.swift */,
 			);
 			path = ViewControllerFiles;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				09FA41BF25F564C40022F7F8 /* MenuCell.xib in Resources */,
 				090116C525F54194007C9032 /* LaunchScreen.storyboard in Resources */,
 				090970FF25F691690034A497 /* StockRevenueViewController.storyboard in Resources */,
+				09137D882604F75A00636885 /* StockKnowledgeViewContorller.storyboard in Resources */,
 				090970FC25F6910D0034A497 /* StockAvgViewController.storyboard in Resources */,
 				090116C225F54194007C9032 /* Assets.xcassets in Resources */,
 				09FA41AF25F563140022F7F8 /* README.md in Resources */,
@@ -369,6 +376,7 @@
 				0909710225F691970034A497 /* StockAvgViewController.swift in Sources */,
 				09FA41B425F563140022F7F8 /* UnderlineFocusView.swift in Sources */,
 				09FA41B525F563140022F7F8 /* TitleLabelMenuViewCell.swift in Sources */,
+				09137D8B2604F7D400636885 /* StockKnowledgeViewContorller.swift in Sources */,
 				09FA41B225F563140022F7F8 /* ContentAppearanceHandler.swift in Sources */,
 				0909710525F691E00034A497 /* StockRevenueViewController.swift in Sources */,
 				09A4174C25FC09A4007E9428 /* DebateViewController.swift in Sources */,

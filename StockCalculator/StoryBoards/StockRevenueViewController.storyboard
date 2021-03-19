@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주식 수익금 계산" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lu-CH-L3m">
-                                <rect key="frame" x="120" y="26" width="150" height="28"/>
+                                <rect key="frame" x="120" y="9" width="150" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="due-o4-iJk">
-                                <rect key="frame" x="0.0" y="71" width="390" height="91"/>
+                                <rect key="frame" x="0.0" y="45" width="390" height="91"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 가지고 있는 주식 수를 입력해주세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKg-pk-TuD">
                                         <rect key="frame" x="8" y="12" width="259" height="21"/>
@@ -53,7 +53,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqu-I0-fh2">
-                                <rect key="frame" x="0.0" y="172" width="390" height="91"/>
+                                <rect key="frame" x="0.0" y="144" width="390" height="91"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. 평단가를 입력해주세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ism-Ao-VHC">
                                         <rect key="frame" x="8" y="12" width="176" height="21"/>
@@ -79,7 +79,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wI4-Xb-HZs">
-                                <rect key="frame" x="0.0" y="273" width="390" height="91"/>
+                                <rect key="frame" x="0.0" y="243" width="390" height="91"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. 매도 가격을 입력해주세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nf3-fL-WVw">
                                         <rect key="frame" x="8" y="12" width="195" height="21"/>
@@ -105,7 +105,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7h8-js-Gtr">
-                                <rect key="frame" x="0.0" y="374" width="390" height="192"/>
+                                <rect key="frame" x="0.0" y="342" width="390" height="192"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국내 주식 수익금" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL7-dy-zGe">
                                         <rect key="frame" x="0.0" y="12" width="390" height="18"/>
@@ -164,20 +164,20 @@
                         <viewLayoutGuide key="safeArea" id="DlX-q2-lxt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5lu-CH-L3m" firstAttribute="top" secondItem="GC2-Ph-ijh" secondAttribute="top" constant="26" id="9be-ty-1b2"/>
+                            <constraint firstItem="5lu-CH-L3m" firstAttribute="top" secondItem="GC2-Ph-ijh" secondAttribute="top" constant="9" id="9be-ty-1b2"/>
                             <constraint firstItem="mqu-I0-fh2" firstAttribute="leading" secondItem="DlX-q2-lxt" secondAttribute="leading" id="AXA-0W-SXc"/>
                             <constraint firstItem="due-o4-iJk" firstAttribute="centerX" secondItem="GC2-Ph-ijh" secondAttribute="centerX" id="CCs-hw-KRq"/>
                             <constraint firstItem="7h8-js-Gtr" firstAttribute="trailing" secondItem="DlX-q2-lxt" secondAttribute="trailing" id="HUP-4N-WcK"/>
                             <constraint firstItem="due-o4-iJk" firstAttribute="leading" secondItem="DlX-q2-lxt" secondAttribute="leading" id="IhW-nM-w3B"/>
                             <constraint firstItem="wI4-Xb-HZs" firstAttribute="trailing" secondItem="DlX-q2-lxt" secondAttribute="trailing" id="JW1-AN-YVL"/>
                             <constraint firstItem="7h8-js-Gtr" firstAttribute="leading" secondItem="DlX-q2-lxt" secondAttribute="leading" id="Oso-Uk-dN6"/>
-                            <constraint firstItem="due-o4-iJk" firstAttribute="top" secondItem="5lu-CH-L3m" secondAttribute="bottom" constant="17" id="Pqt-Lf-kXY"/>
+                            <constraint firstItem="due-o4-iJk" firstAttribute="top" secondItem="5lu-CH-L3m" secondAttribute="bottom" constant="8" id="Pqt-Lf-kXY"/>
                             <constraint firstItem="due-o4-iJk" firstAttribute="trailing" secondItem="DlX-q2-lxt" secondAttribute="trailing" id="U0e-Sc-BKS"/>
-                            <constraint firstItem="wI4-Xb-HZs" firstAttribute="top" secondItem="mqu-I0-fh2" secondAttribute="bottom" constant="10" id="Vey-6V-ZiU"/>
+                            <constraint firstItem="wI4-Xb-HZs" firstAttribute="top" secondItem="mqu-I0-fh2" secondAttribute="bottom" constant="8" id="Vey-6V-ZiU"/>
                             <constraint firstItem="wI4-Xb-HZs" firstAttribute="leading" secondItem="DlX-q2-lxt" secondAttribute="leading" id="YyT-Kt-W6K"/>
                             <constraint firstItem="mqu-I0-fh2" firstAttribute="trailing" secondItem="DlX-q2-lxt" secondAttribute="trailing" id="dh3-qj-FCr"/>
-                            <constraint firstItem="mqu-I0-fh2" firstAttribute="top" secondItem="due-o4-iJk" secondAttribute="bottom" constant="10" id="ewa-68-1ZP"/>
-                            <constraint firstItem="7h8-js-Gtr" firstAttribute="top" secondItem="wI4-Xb-HZs" secondAttribute="bottom" constant="10" id="f1J-MB-f6d"/>
+                            <constraint firstItem="mqu-I0-fh2" firstAttribute="top" secondItem="due-o4-iJk" secondAttribute="bottom" constant="8" id="ewa-68-1ZP"/>
+                            <constraint firstItem="7h8-js-Gtr" firstAttribute="top" secondItem="wI4-Xb-HZs" secondAttribute="bottom" constant="8" id="f1J-MB-f6d"/>
                             <constraint firstItem="5lu-CH-L3m" firstAttribute="centerX" secondItem="GC2-Ph-ijh" secondAttribute="centerX" id="iLs-yU-h1i"/>
                         </constraints>
                     </view>

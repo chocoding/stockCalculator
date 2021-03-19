@@ -30,8 +30,6 @@ class StockAvgViewController : UIViewController
     var _currentStockAvg: Double = 0.0
     var _buyingStockPrice: Double = 0.0
     
-    
-    
     // MARK: StockAvgViewController Class Function Group
     
     override func viewDidLoad()
@@ -87,6 +85,8 @@ class StockAvgViewController : UIViewController
         buyingAllPrice.text = "매수 필요 금액 : \(result ?? "")"
     }
     
+    
+    
     // MARK: StockAvgViewController Class IBAction Group
     
     // 첫 번째 텍스트 필드
@@ -94,15 +94,7 @@ class StockAvgViewController : UIViewController
         // UITextField의 text는 옵셔널이기 때문에, 바인딩을 하고, 해당 텍스트 필드에 값이 있고 currentHoldEditting이 false라면, currentHoldEditting을 true로 만든다.
         if let text = currentHoldStock.text{
             if text.count > 0 {
-                
-                let nF = NumberFormatter()
-                nF.numberStyle = .decimal
-                
-                let tfStr = Int64(text.replacingOccurrences(of: ",", with: ""))
-                currentHoldStock.text = nF.string(from: NSNumber(value: tfStr!))!
-                
-                _currentHoldStock = Int64((currentHoldStock.text?.replacingOccurrences(of: ",", with: ""))!)!
-                
+                _currentHoldStock = MyCustomClass.textFieldIntegerComma(text, currentHoldStock)
                 currentHoldEditting = true
             }
         }
@@ -141,15 +133,7 @@ class StockAvgViewController : UIViewController
     @IBAction func buyingTextField(_ sender: Any) {
         if let text = buyingStock.text{
             if text.count > 0{
-                
-                let nF = NumberFormatter()
-                nF.numberStyle = .decimal
-                
-                let tfStr = Int64(text.replacingOccurrences(of: ",", with: ""))
-                buyingStock.text = nF.string(from: NSNumber(value: tfStr!))!
-                
-                _buyingStock = Int64((currentHoldStock.text?.replacingOccurrences(of: ",", with: ""))!)!
-                
+                _buyingStock = MyCustomClass.textFieldIntegerComma(text, buyingStock)
                 buyingStockEditting = true
             }
         }
