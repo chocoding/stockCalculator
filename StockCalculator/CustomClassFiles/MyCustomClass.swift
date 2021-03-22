@@ -29,3 +29,7 @@ class MyCustomClass
         return Int64((uiTextField.text?.replacingOccurrences(of: ",", with: ""))!)!
     }
 }
+
+class HTMLDataClass{
+    
+}

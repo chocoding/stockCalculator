@@ -22,8 +22,12 @@
 		09137D8B2604F7D400636885 /* StockKnowledgeViewContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09137D8A2604F7D400636885 /* StockKnowledgeViewContorller.swift */; };
 		0919114F25F54D9F0050359B /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */; };
 		0919115C25F5567E0050359B /* GoogleAdmob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919115B25F5567E0050359B /* GoogleAdmob.swift */; };
+		097B9315260648C300CAA1BB /* ExtensionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B9314260648C300CAA1BB /* ExtensionClass.swift */; };
 		09A4174925FC0976007E9428 /* DebateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A4174825FC0976007E9428 /* DebateViewController.storyboard */; };
 		09A4174C25FC09A4007E9428 /* DebateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4174B25FC09A4007E9428 /* DebateViewController.swift */; };
+		09A6EEA826090BEC00C63E3F /* StockJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A6EEA726090BEC00C63E3F /* StockJson.json */; };
+		09A6EEAB2609140400C63E3F /* economy-1294549_1280.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A6EEAA2609140400C63E3F /* economy-1294549_1280.png */; };
+		09A6EEAD2609158900C63E3F /* RixYeoljeongdo_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09A6EEAC2609158900C63E3F /* RixYeoljeongdo_Regular.ttf */; };
 		09D7456B25F6DBEB004DCC61 /* MyCustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7456A25F6DBEB004DCC61 /* MyCustomClass.swift */; };
 		09FA41AE25F563140022F7F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 09FA419D25F563140022F7F8 /* LICENSE */; };
 		09FA41AF25F563140022F7F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 09FA419E25F563140022F7F8 /* README.md */; };
@@ -43,6 +47,19 @@
 		09FA41C925F573340022F7F8 /* PagingViewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA41C825F573340022F7F8 /* PagingViewFile.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0985C1102605211500BCD5E3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		090116B525F54193007C9032 /* StockCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		090116B825F54193007C9032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,8 +77,12 @@
 		09137D8A2604F7D400636885 /* StockKnowledgeViewContorller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockKnowledgeViewContorller.swift; sourceTree = "<group>"; };
 		0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Pods/GoogleMobileAds.xcframework; sourceTree = SOURCE_ROOT; };
 		0919115B25F5567E0050359B /* GoogleAdmob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdmob.swift; sourceTree = "<group>"; };
+		097B9314260648C300CAA1BB /* ExtensionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionClass.swift; sourceTree = "<group>"; };
 		09A4174825FC0976007E9428 /* DebateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DebateViewController.storyboard; sourceTree = "<group>"; };
 		09A4174B25FC09A4007E9428 /* DebateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebateViewController.swift; sourceTree = "<group>"; };
+		09A6EEA726090BEC00C63E3F /* StockJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StockJson.json; sourceTree = "<group>"; };
+		09A6EEAA2609140400C63E3F /* economy-1294549_1280.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "economy-1294549_1280.png"; sourceTree = "<group>"; };
+		09A6EEAC2609158900C63E3F /* RixYeoljeongdo_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RixYeoljeongdo_Regular.ttf; path = ../../../../Downloads/RixYeoljeongdo_Regular.ttf; sourceTree = "<group>"; };
 		09D7456A25F6DBEB004DCC61 /* MyCustomClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomClass.swift; sourceTree = "<group>"; };
 		09FA419D25F563140022F7F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		09FA419E25F563140022F7F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -119,6 +140,7 @@
 		090116B725F54193007C9032 /* StockCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				09A6EEA9260913F500C63E3F /* Data */,
 				090970F925F690E80034A497 /* StoryBoards */,
 				09FA41C725F572EC0022F7F8 /* ViewControllerFiles */,
 				09FA41C625F572C40022F7F8 /* CustomClassFiles */,
@@ -143,6 +165,16 @@
 				09137D872604F75A00636885 /* StockKnowledgeViewContorller.storyboard */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		09A6EEA9260913F500C63E3F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				09A6EEAC2609158900C63E3F /* RixYeoljeongdo_Regular.ttf */,
+				09A6EEA726090BEC00C63E3F /* StockJson.json */,
+				09A6EEAA2609140400C63E3F /* economy-1294549_1280.png */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		09FA419C25F563140022F7F8 /* PagingKit */ = {
@@ -212,6 +244,7 @@
 				0919115B25F5567E0050359B /* GoogleAdmob.swift */,
 				09FA41C825F573340022F7F8 /* PagingViewFile.swift */,
 				09D7456A25F6DBEB004DCC61 /* MyCustomClass.swift */,
+				097B9314260648C300CAA1BB /* ExtensionClass.swift */,
 			);
 			path = CustomClassFiles;
 			sourceTree = "<group>";
@@ -259,6 +292,7 @@
 				090116B225F54193007C9032 /* Frameworks */,
 				090116B325F54193007C9032 /* Resources */,
 				69590D71D8E27B4F52DCA466 /* [CP] Embed Pods Frameworks */,
+				0985C1102605211500BCD5E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,15 +340,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A6EEA826090BEC00C63E3F /* StockJson.json in Resources */,
 				09FA41C225F566E40022F7F8 /* FocusView.xib in Resources */,
 				09FA41BF25F564C40022F7F8 /* MenuCell.xib in Resources */,
 				090116C525F54194007C9032 /* LaunchScreen.storyboard in Resources */,
+				09A6EEAD2609158900C63E3F /* RixYeoljeongdo_Regular.ttf in Resources */,
 				090970FF25F691690034A497 /* StockRevenueViewController.storyboard in Resources */,
 				09137D882604F75A00636885 /* StockKnowledgeViewContorller.storyboard in Resources */,
 				090970FC25F6910D0034A497 /* StockAvgViewController.storyboard in Resources */,
 				090116C225F54194007C9032 /* Assets.xcassets in Resources */,
 				09FA41AF25F563140022F7F8 /* README.md in Resources */,
 				09A4174925FC0976007E9428 /* DebateViewController.storyboard in Resources */,
+				09A6EEAB2609140400C63E3F /* economy-1294549_1280.png in Resources */,
 				09FA41AE25F563140022F7F8 /* LICENSE in Resources */,
 				090116C025F54193007C9032 /* Main.storyboard in Resources */,
 			);
@@ -381,6 +418,7 @@
 				0909710525F691E00034A497 /* StockRevenueViewController.swift in Sources */,
 				09A4174C25FC09A4007E9428 /* DebateViewController.swift in Sources */,
 				090116B925F54193007C9032 /* AppDelegate.swift in Sources */,
+				097B9315260648C300CAA1BB /* ExtensionClass.swift in Sources */,
 				09FA41B925F563140022F7F8 /* PagingMenuView.swift in Sources */,
 				09FA41B325F563140022F7F8 /* PagingContentViewController.swift in Sources */,
 				09FA41B625F563140022F7F8 /* OverlayMenuCell.swift in Sources */,
@@ -601,7 +639,7 @@
 					"\"WebKit\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chocochoco.StockCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chocochoco.stockcalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -678,7 +716,7 @@
 					"\"WebKit\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chocochoco.StockCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chocochoco.stockcalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

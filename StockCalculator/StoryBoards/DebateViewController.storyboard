@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -14,20 +14,103 @@
             <objects>
                 <viewController storyboardIdentifier="DebateViewController" id="Jxf-s1-NPB" customClass="DebateViewController" customModule="StockCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQf-B1-s45">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종목 토론방" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3d4-cs-LfE">
+                                <rect key="frame" x="20" y="23" width="350" height="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종목 토론방으로 이동하기 위한 종목이나 해외주식의 경우 티커를 입력해주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fe-iy-SLF">
+                                <rect key="frame" x="20" y="59" width="350" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.11206845288208012" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="종목 또는 티커를 입력하세요" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWF-ti-tWD">
+                                <rect key="frame" x="67" y="117" width="260" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuf-56-Fvk">
+                                <rect key="frame" x="20" y="180" width="354" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.036709969359999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cxs-R0-SMw"/>
+                                </constraints>
+                                <state key="normal" title="국내주식 종목 토론방 가기"/>
+                                <connections>
+                                    <action selector="koreaDebateAction:" destination="Jxf-s1-NPB" eventType="touchUpInside" id="cXe-Qs-NzG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7C-62-gIp">
+                                <rect key="frame" x="20" y="238" width="354" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RT8-w4-Die"/>
+                                </constraints>
+                                <state key="normal" title="해외주식 종목 토론방 가기"/>
+                                <connections>
+                                    <action selector="usDebateAction:" destination="Jxf-s1-NPB" eventType="touchUpInside" id="zaR-ZM-nqX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccl-L1-dpF">
+                                <rect key="frame" x="20" y="296" width="354" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.1120684529" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AjJ-y0-2kx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="공매도율 확인하기 ( 해외주식 전용 )"/>
+                                <connections>
+                                    <action selector="shortInterestAction:" destination="Jxf-s1-NPB" eventType="touchUpInside" id="cAU-JK-iY2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nwl-Tg-w1L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ccl-L1-dpF" firstAttribute="centerX" secondItem="wQf-B1-s45" secondAttribute="centerX" constant="2" id="8Nf-uD-AhB"/>
+                            <constraint firstItem="1fe-iy-SLF" firstAttribute="top" secondItem="3d4-cs-LfE" secondAttribute="bottom" constant="8" symbolic="YES" id="8ns-yp-JRl"/>
+                            <constraint firstItem="ccl-L1-dpF" firstAttribute="leading" secondItem="nwl-Tg-w1L" secondAttribute="leading" constant="20" id="Aia-6l-yJV"/>
+                            <constraint firstItem="tWF-ti-tWD" firstAttribute="top" secondItem="1fe-iy-SLF" secondAttribute="bottom" constant="17.333333333333343" id="CeM-TL-b9m"/>
+                            <constraint firstItem="nwl-Tg-w1L" firstAttribute="trailing" secondItem="Cuf-56-Fvk" secondAttribute="trailing" constant="16" id="ECq-yc-DTd"/>
+                            <constraint firstItem="1fe-iy-SLF" firstAttribute="centerX" secondItem="wQf-B1-s45" secondAttribute="centerX" id="FL0-SS-XSA"/>
+                            <constraint firstItem="J7C-62-gIp" firstAttribute="top" secondItem="Cuf-56-Fvk" secondAttribute="bottom" constant="8" symbolic="YES" id="JFW-eF-XSt"/>
+                            <constraint firstItem="nwl-Tg-w1L" firstAttribute="trailing" secondItem="tWF-ti-tWD" secondAttribute="trailing" constant="63" id="JGP-C4-UJH"/>
+                            <constraint firstItem="3d4-cs-LfE" firstAttribute="top" secondItem="wQf-B1-s45" secondAttribute="top" constant="23" id="LOl-BE-Wsc"/>
+                            <constraint firstItem="Cuf-56-Fvk" firstAttribute="leading" secondItem="nwl-Tg-w1L" secondAttribute="leading" constant="20" id="NAl-p7-YIJ"/>
+                            <constraint firstItem="tWF-ti-tWD" firstAttribute="leading" secondItem="nwl-Tg-w1L" secondAttribute="leading" constant="67" id="QgI-mK-kOy"/>
+                            <constraint firstItem="3d4-cs-LfE" firstAttribute="leading" secondItem="nwl-Tg-w1L" secondAttribute="leading" constant="20" id="SLR-UX-kK8"/>
+                            <constraint firstItem="J7C-62-gIp" firstAttribute="leading" secondItem="nwl-Tg-w1L" secondAttribute="leading" constant="20" id="ZxU-sb-Xye"/>
+                            <constraint firstItem="Cuf-56-Fvk" firstAttribute="top" secondItem="tWF-ti-tWD" secondAttribute="bottom" constant="29" id="bSy-fO-JAx"/>
+                            <constraint firstItem="nwl-Tg-w1L" firstAttribute="trailing" secondItem="ccl-L1-dpF" secondAttribute="trailing" constant="16" id="fFS-N0-QcN"/>
+                            <constraint firstItem="3d4-cs-LfE" firstAttribute="centerX" secondItem="wQf-B1-s45" secondAttribute="centerX" id="hAR-SH-4p5"/>
+                            <constraint firstItem="nwl-Tg-w1L" firstAttribute="trailing" secondItem="1fe-iy-SLF" secondAttribute="trailing" constant="20" id="lLd-up-0MC"/>
+                            <constraint firstItem="nwl-Tg-w1L" firstAttribute="trailing" secondItem="J7C-62-gIp" secondAttribute="trailing" constant="16" id="lye-IC-8Bp"/>
+                            <constraint firstItem="nwl-Tg-w1L" firstAttribute="trailing" secondItem="3d4-cs-LfE" secondAttribute="trailing" constant="20" id="nuw-YD-sV3"/>
+                            <constraint firstItem="Cuf-56-Fvk" firstAttribute="centerX" secondItem="wQf-B1-s45" secondAttribute="centerX" constant="2" id="nzv-aP-gDK"/>
+                            <constraint firstItem="1fe-iy-SLF" firstAttribute="leading" secondItem="nwl-Tg-w1L" secondAttribute="leading" constant="20" id="oPy-Fv-bcm"/>
+                            <constraint firstItem="ccl-L1-dpF" firstAttribute="top" secondItem="Cuf-56-Fvk" secondAttribute="bottom" constant="66" id="xLz-9U-Npb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="debateTextfield" destination="tWF-ti-tWD" id="v90-kL-7ks"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfd-fZ-Ngs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-226" y="-109"/>
+            <point key="canvasLocation" x="1586.1538461538462" y="-110.18957345971563"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
