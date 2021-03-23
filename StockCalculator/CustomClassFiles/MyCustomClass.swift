@@ -9,6 +9,8 @@ import UIKit
 
 class MyCustomClass
 {
+    var stockInfo: [StockInfo] = []
+    
     class func showAlert(viewController: UIViewController?,title: String, msg: String, buttonTitle: String, handler: ((UIAlertAction) -> Swift.Void)?){
             
           let alertController = UIAlertController(title: title, message: msg, preferredStyle: .alert)
@@ -28,8 +30,28 @@ class MyCustomClass
         
         return Int64((uiTextField.text?.replacingOccurrences(of: ",", with: ""))!)!
     }
+    
+    class func urlJson(){
+        
+    }
+    
+    func internalJson(){
+        let jsonDecoder = JSONDecoder()
+        
+        guard let stockInfoData : NSDataAsset = NSDataAsset(name: "StockJson") else {
+            return
+        }
+        do{
+            stockInfo.self = try jsonDecoder.decode([StockInfo].self, from: stockInfoData.data)
+        }catch{
+            print(error.localizedDescription)
+        }
+        
+        print(stockInfo.count)
+    }
 }
 
-class HTMLDataClass{
-    
+struct StockInfo : Codable{
+    let stockName: String
+    let stockCode: String
 }

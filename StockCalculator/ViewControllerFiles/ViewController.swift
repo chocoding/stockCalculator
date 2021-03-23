@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     var menuViewController: PagingMenuViewController!
     var contentViewController: PagingContentViewController!
     
+    var exchange_Boolean = false
+    
+    let myClass = MyCustomClass()
+    
     // Test Code
     static var viewController: (UIColor) -> UIViewController = { (color) in
            let vc = UIViewController()
@@ -48,7 +52,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         pagingViewStart()
         adMobStart()
+        exchangeJson()
+        myClass.internalJson()
     }
-    
-    
 }
