@@ -16,11 +16,15 @@ class StockRevenueViewController : UIViewController
     @IBOutlet weak var koreaRevenue: UITextField!
     @IBOutlet weak var usRevenue: UITextField!
     
+    @IBOutlet weak var usLabel: UILabel!
     // MARK: Variable
     
     var holdStockInput = false, avgPriceInput = false, sellPriceInput = false
     var _holdStockPrice : Int64 = 0
     var _avgPrice = 0.0, _sellPrice = 0.0
+    var exc = 0.0
+    
+    var myCustomClass = MyCustomClass()
     
     // MARK: Function
     
@@ -41,12 +45,17 @@ class StockRevenueViewController : UIViewController
         let result = nF.string(from: NSNumber(value: sellRevenue - avgRevenue))
         koreaRevenue.text = "\(result ?? "0") ₩"
         
-        // 미국 주식 업뎃하자!
-        usRevenue.text = "미국 주식 수익은 업뎃 예정입니다."
+        let usResult = nF.string(from: NSNumber(value: (sellRevenue - avgRevenue) * exc))
+        usRevenue.text = "\(usResult ?? "0") ₩"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        myCustomClass.exchangeJson()
+        DispatchQueue.main.async {
+            self.exc = Double(self.myCustomClass.getExchangeData().replacingOccurrences(of: ",", with: ""))!
+            self.usLabel.text = "미국 주식 수익금 (현재 환율 : \(self.exc))"
+        }
         holdStock.addTarget(self, action: #selector(holdStockSelector), for: .editingChanged)
         avgPrice.addTarget(self, action: #selector(myTextFieldDidChange), for: .editingChanged)
         sellPrice.addTarget(self, action: #selector(myTextFieldDidChange), for: .editingChanged)

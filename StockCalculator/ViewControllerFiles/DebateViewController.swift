@@ -13,6 +13,8 @@ class DebateViewController : UIViewController
     
     @IBOutlet weak var debateTextfield: UITextField!
     
+    var myCustomClass = MyCustomClass()
+    
     // MARK: Function
     
     func openURL(_ url: String){
@@ -21,15 +23,59 @@ class DebateViewController : UIViewController
         }
     }
     
+    func stockCodeOutput(_ code: String) -> String{
+        var returnCode = ""
+        if code.count < 6{
+            if code.count <= 1{
+                returnCode = "00000" + code
+            }
+            else if code.count <= 2{
+                returnCode = "0000" + code
+            }
+            else if code.count <= 3{
+                returnCode = "000" + code
+            }
+            else if code.count <= 4{
+                returnCode = "00" + code
+            }
+            else if code.count <= 5{
+                returnCode = "0" + code
+            }
+        }
+        else{
+            returnCode = code
+        }
+        
+        return returnCode
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        myCustomClass.internalJson(jsonData: myCustomClass.readLocalFile(name: "StockJson")!)
     }
     
     // MARK: Action Function
     
     @IBAction func koreaDebateAction(_ sender: Any) {
+        var code: String = ""
         if let text = debateTextfield.text{
-            openURL(text)
+            for dic in myCustomClass.getStockDic(){
+                if dic.name == text{
+                   code = stockCodeOutput(dic.code!)
+                }
+                else if dic.code == text{
+                   code = stockCodeOutput(dic.code!)
+                }
+            }
+            
+            if code == ""{
+                code = "005930"
+            }
+            
+            let combineURL = "https://finance.naver.com/item/board.nhn?code=\(code)"
+            openURL(combineURL)
+            
+            debateTextfield.text = ""
         }
     }
     

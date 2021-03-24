@@ -37,22 +37,6 @@ extension String {
 
 extension ViewController
 {
-    // exchange
-    func exchangeMain(){
-        if !exchange_Boolean{
-            exchangeJson()
-        }
-    }
-    
-    func exchangeJson(){
-        let authkey = "PhxD1fdwzYtld5yjtb4udygGiSuDdhiY"
-        let df = DateFormatter()
-        df.dateFormat = "yyyy-MM-dd"
-        let cur_Date = df.string(from: Date())
-        let str = Int(cur_Date.replacingOccurrences(of: "-", with: ""))! - 1
-        let url = "https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=\(authkey)&searchdate=\(str)&data=AP01"
-    }
-    
     // pagingView
     func pagingViewStart(){
         menuViewController.register(nib: UINib(nibName: "MenuCell", bundle: nil), forCellWithReuseIdentifier: "MenuCell")

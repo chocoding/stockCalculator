@@ -16,13 +16,25 @@
                     <view key="view" contentMode="scaleToFill" id="pcc-LP-IiP">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="업뎃 예정입니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyg-ON-P3w">
+                                <rect key="frame" x="139" y="412" width="112" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3rB-F9-Uaa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dyg-ON-P3w" firstAttribute="centerX" secondItem="pcc-LP-IiP" secondAttribute="centerX" id="9F8-ga-LV7"/>
+                            <constraint firstItem="dyg-ON-P3w" firstAttribute="centerY" secondItem="pcc-LP-IiP" secondAttribute="centerY" id="Jzt-mH-Mr7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aE3-YF-rBR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="319" y="157"/>
+            <point key="canvasLocation" x="318.46153846153845" y="156.39810426540285"/>
         </scene>
     </scenes>
     <resources>
