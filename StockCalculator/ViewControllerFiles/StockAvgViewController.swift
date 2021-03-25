@@ -32,6 +32,10 @@ class StockAvgViewController : UIViewController
     
     // MARK: StockAvgViewController Class Function Group
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+          self.view.endEditing(true)
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -50,6 +54,14 @@ class StockAvgViewController : UIViewController
                 _buyingStockPrice = Double(amountString.replacingOccurrences(of: ",", with: "")) ?? 0.0
             }
         }
+    }
+    
+    func longCommaClear(_ str: String) -> Int64{
+        return Int64(str.replacingOccurrences(of: ",", with: "")) ?? 0
+    }
+    
+    func doubleCommaClear(_ str: String) -> Double{
+        return Double(str.replacingOccurrences(of: ",", with: "")) ?? 0.0
     }
     
     // 입력 가능한 텍스트 필드가 비어있다면, 총 가격에 대한 텍스트 필드를 비워주고, Bool값의 false를 리턴한다.
@@ -183,10 +195,10 @@ class StockAvgViewController : UIViewController
             title = "평단가 계산"    // 타이틀은 평단가 계산
             
             // 매수를 하게 될 경우, 보유 주식과 매수 하게 될 주식 수를 더해서 allStock에 대입
-            let allStock = (buyingStock.text! as NSString).longLongValue + (currentHoldStock.text! as NSString).longLongValue
+            let allStock = longCommaClear(buyingStock.text!) + longCommaClear(currentHoldStock.text!)
             
             // 매수를 하게 될 경우, 보유 주식과 매수 하게 될 주식의 총 가격을 price에 대입
-            let price = ((currentHoldStock.text! as NSString).doubleValue * (currentStockAvg.text! as NSString).doubleValue) + ((buyingStock.text! as NSString).doubleValue * (buyingStockPrice.text! as NSString).doubleValue)
+            let price = (doubleCommaClear(currentHoldStock.text!) * doubleCommaClear(currentStockAvg.text!)) + (doubleCommaClear(buyingStock.text!) * doubleCommaClear(buyingStockPrice.text!))
             
             // 총 가격과 총 보유 주식을 나눠 avgPrice에 대입하면, 이건 평단가를 뜻한다.
             let avgPrice =  price/Double(allStock)

@@ -25,6 +25,7 @@ class StockRevenueViewController : UIViewController
     var exc = 0.0
     
     var myCustomClass = MyCustomClass()
+    var exchange = ""
     
     // MARK: Function
     
@@ -34,10 +35,35 @@ class StockRevenueViewController : UIViewController
         return false
     }
     
-    func revenueCalculate(){
+    func exchangeJson(){
+        let authkey = "PhxD1fdwzYtld5yjtb4udygGiSuDdhiY"
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd"
+        let cur_Date = df.string(from: Date())
+        let str = Int(cur_Date.replacingOccurrences(of: "-", with: ""))! - 1
+        let url = "https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=\(authkey)&searchdate=\(str)&data=AP01"
         
+        URLSession.shared.dataTask(with: URL(string: url)!){ (data, response, error) in
+            if let dataJson = data{
+                do{
+                    let json = try JSONSerialization.jsonObject(with: dataJson, options: []) as! Array<Dictionary<String,Any>>
+                    for jsonExchange in json{
+                        if jsonExchange["cur_unit"]! as! String == "USD"{
+                            self.exchange = jsonExchange["deal_bas_r"]! as! String
+                        }
+                    }
+                }catch{
+                    print(error)
+                }
+            }
+        }.resume()
+    }
+    
+    func revenueCalculate(){
         let nF = NumberFormatter()
         nF.numberStyle = .decimal
+        nF.maximumFractionDigits = 1
+        nF.minimumFractionDigits = 1
         
         let avgRevenue = Double(_holdStockPrice) * _avgPrice
         let sellRevenue = Double(_holdStockPrice) * _sellPrice
@@ -45,17 +71,34 @@ class StockRevenueViewController : UIViewController
         let result = nF.string(from: NSNumber(value: sellRevenue - avgRevenue))
         koreaRevenue.text = "\(result ?? "0") ₩"
         
-        let usResult = nF.string(from: NSNumber(value: (sellRevenue - avgRevenue) * exc))
-        usRevenue.text = "\(usResult ?? "0") ₩"
+        var usResult = ""
+        var usRevenueResult = (sellRevenue - avgRevenue) * exc
+        if usRevenueResult > 2500000{
+            let usTex = (usRevenueResult - 2500000) * 0.22
+            usRevenueResult = (usRevenueResult) - usTex
+            usResult = nF.string(from: NSNumber(value: usRevenueResult))!
+            usRevenue.text = "양도소득세 계산포함 : \(usResult) ₩"
+        }
+        else{
+            usResult = nF.string(from: NSNumber(value: usRevenueResult))!
+            usRevenue.text = "\(usResult) ₩"
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        DispatchQueue.main.async {
+            self.exc = Double(self.exchange.replacingOccurrences(of: ",", with: "")) ?? 0.0
+            self.usLabel.text = "미국 주식 수익금 (현재 환율 : \(self.exc))"
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+          self.view.endEditing(true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myCustomClass.exchangeJson()
-        DispatchQueue.main.async {
-            self.exc = Double(self.myCustomClass.getExchangeData().replacingOccurrences(of: ",", with: ""))!
-            self.usLabel.text = "미국 주식 수익금 (현재 환율 : \(self.exc))"
-        }
+        exchangeJson()
         holdStock.addTarget(self, action: #selector(holdStockSelector), for: .editingChanged)
         avgPrice.addTarget(self, action: #selector(myTextFieldDidChange), for: .editingChanged)
         sellPrice.addTarget(self, action: #selector(myTextFieldDidChange), for: .editingChanged)
