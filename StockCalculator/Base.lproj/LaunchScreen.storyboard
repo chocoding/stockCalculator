@@ -5,14 +5,8 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="NanumBarunGothicBold.ttf">
-            <string>NanumBarunGothicBold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -22,27 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="economy-1294549_1280.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ygj-f4-bF0">
-                                <rect key="frame" x="46" y="155" width="299" height="299"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="2aX-xR-Zpr">
+                                <rect key="frame" x="-53" y="198" width="497" height="448"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주식&amp;필수!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8E-JY-Vuc">
-                                <rect key="frame" x="46" y="462" width="299" height="207"/>
-                                <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.32157102230000001" green="0.32156431670000002" blue="0.32156884670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m8E-JY-Vuc" secondAttribute="bottom" constant="141" id="08h-qt-rMK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ygj-f4-bF0" secondAttribute="trailing" constant="45" id="B20-Kv-OsY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m8E-JY-Vuc" secondAttribute="trailing" constant="45" id="NAm-L4-eUE"/>
-                            <constraint firstItem="Ygj-f4-bF0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="111" id="WV8-Xr-YIi"/>
-                            <constraint firstItem="m8E-JY-Vuc" firstAttribute="top" secondItem="Ygj-f4-bF0" secondAttribute="bottom" constant="8" symbolic="YES" id="eOP-bP-G4Q"/>
-                            <constraint firstItem="Ygj-f4-bF0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="i0T-P6-ehm"/>
-                            <constraint firstItem="m8E-JY-Vuc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="m7U-lG-aJZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ygj-f4-bF0" secondAttribute="bottom" constant="356" id="qOM-F0-EyX"/>
+                            <constraint firstItem="2aX-xR-Zpr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-53" id="66n-ih-Jpt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2aX-xR-Zpr" secondAttribute="bottom" constant="164" id="Mjy-aP-os9"/>
+                            <constraint firstAttribute="trailing" secondItem="2aX-xR-Zpr" secondAttribute="trailing" constant="-54" id="aFe-ch-ZK8"/>
+                            <constraint firstItem="2aX-xR-Zpr" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="198" id="wFp-fT-YfY"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -52,9 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="economy-1294549_1280.png" width="1280" height="1280"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="logo.png" width="245.75999450683594" height="245.75999450683594"/>
     </resources>
 </document>

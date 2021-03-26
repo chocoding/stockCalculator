@@ -21,7 +21,8 @@
 		09137D882604F75A00636885 /* StockKnowledgeViewContorller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09137D872604F75A00636885 /* StockKnowledgeViewContorller.storyboard */; };
 		09137D8B2604F7D400636885 /* StockKnowledgeViewContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09137D8A2604F7D400636885 /* StockKnowledgeViewContorller.swift */; };
 		0919114F25F54D9F0050359B /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */; };
-		096BEA8F260A4261000D69A8 /* NanumBarunGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 096BEA8E260A4261000D69A8 /* NanumBarunGothicBold.ttf */; };
+		095DA642260E2AC5000ABDA9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 095DA641260E2AC5000ABDA9 /* logo.png */; };
+		095DA650260E379D000ABDA9 /* DeviceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095DA64F260E379D000ABDA9 /* DeviceConfig.swift */; };
 		097B9315260648C300CAA1BB /* ExtensionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B9314260648C300CAA1BB /* ExtensionClass.swift */; };
 		09A4174925FC0976007E9428 /* DebateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A4174825FC0976007E9428 /* DebateViewController.storyboard */; };
 		09A4174C25FC09A4007E9428 /* DebateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4174B25FC09A4007E9428 /* DebateViewController.swift */; };
@@ -74,7 +75,8 @@
 		09137D872604F75A00636885 /* StockKnowledgeViewContorller.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StockKnowledgeViewContorller.storyboard; sourceTree = "<group>"; };
 		09137D8A2604F7D400636885 /* StockKnowledgeViewContorller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockKnowledgeViewContorller.swift; sourceTree = "<group>"; };
 		0919114E25F54D9F0050359B /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Pods/GoogleMobileAds.xcframework; sourceTree = SOURCE_ROOT; };
-		096BEA8E260A4261000D69A8 /* NanumBarunGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicBold.ttf; sourceTree = "<group>"; };
+		095DA641260E2AC5000ABDA9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		095DA64F260E379D000ABDA9 /* DeviceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConfig.swift; sourceTree = "<group>"; };
 		097B9314260648C300CAA1BB /* ExtensionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionClass.swift; sourceTree = "<group>"; };
 		09A4174825FC0976007E9428 /* DebateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DebateViewController.storyboard; sourceTree = "<group>"; };
 		09A4174B25FC09A4007E9428 /* DebateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebateViewController.swift; sourceTree = "<group>"; };
@@ -167,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				09A6EEA726090BEC00C63E3F /* StockJson.json */,
-				096BEA8E260A4261000D69A8 /* NanumBarunGothicBold.ttf */,
+				095DA641260E2AC5000ABDA9 /* logo.png */,
 				09A6EEAA2609140400C63E3F /* economy-1294549_1280.png */,
 			);
 			path = Data;
@@ -239,6 +241,7 @@
 			children = (
 				09D7456A25F6DBEB004DCC61 /* MyCustomClass.swift */,
 				097B9314260648C300CAA1BB /* ExtensionClass.swift */,
+				095DA64F260E379D000ABDA9 /* DeviceConfig.swift */,
 			);
 			path = CustomClassFiles;
 			sourceTree = "<group>";
@@ -334,7 +337,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				096BEA8F260A4261000D69A8 /* NanumBarunGothicBold.ttf in Resources */,
 				09A6EEA826090BEC00C63E3F /* StockJson.json in Resources */,
 				09FA41C225F566E40022F7F8 /* FocusView.xib in Resources */,
 				09FA41BF25F564C40022F7F8 /* MenuCell.xib in Resources */,
@@ -345,6 +347,7 @@
 				090116C225F54194007C9032 /* Assets.xcassets in Resources */,
 				09FA41AF25F563140022F7F8 /* README.md in Resources */,
 				09A4174925FC0976007E9428 /* DebateViewController.storyboard in Resources */,
+				095DA642260E2AC5000ABDA9 /* logo.png in Resources */,
 				09A6EEAB2609140400C63E3F /* economy-1294549_1280.png in Resources */,
 				09FA41AE25F563140022F7F8 /* LICENSE in Resources */,
 				090116C025F54193007C9032 /* Main.storyboard in Resources */,
@@ -415,6 +418,7 @@
 				09FA41B325F563140022F7F8 /* PagingContentViewController.swift in Sources */,
 				09FA41B625F563140022F7F8 /* OverlayMenuCell.swift in Sources */,
 				09D7456B25F6DBEB004DCC61 /* MyCustomClass.swift in Sources */,
+				095DA650260E379D000ABDA9 /* DeviceConfig.swift in Sources */,
 				090116BB25F54193007C9032 /* SceneDelegate.swift in Sources */,
 				09FA41BC25F564910022F7F8 /* MenuCell.swift in Sources */,
 				09FA41B025F563140022F7F8 /* Array+NSLayoutConstraint.swift in Sources */,
@@ -567,6 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YC8JDXYY6;
 				INFOPLIST_FILE = StockCalculator/Info.plist;
@@ -574,6 +579,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.01;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -631,8 +637,9 @@
 					"\"WebKit\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chocochoco.stockcalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chocochoco.jufill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -644,6 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YC8JDXYY6;
 				INFOPLIST_FILE = StockCalculator/Info.plist;
@@ -651,6 +659,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.01;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -708,8 +717,9 @@
 					"\"WebKit\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chocochoco.stockcalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chocochoco.jufill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
